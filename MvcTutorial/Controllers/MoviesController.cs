@@ -15,8 +15,18 @@ namespace MvcTutorial.Controllers
         private MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string movieGenre, string searchString)
         {
+            var genreList = new List<string>();
+            var genreQuery = from d in db.Movies
+                             orderby d.Genre
+                             select d.Genre;
+
+            // Create Genre List
+            genreList.AddRange(genreQuery.Distinct());
+            ViewBag.movieGenre = new SelectList(genreList);
+
+            // Create search result
             var movies = from m in db.Movies
                          select m;
 
@@ -24,6 +34,12 @@ namespace MvcTutorial.Controllers
             {
                 movies = movies.Where(s => s.Title.Contains(searchString));
             }
+
+            if (!String.IsNullOrEmpty(movieGenre))
+            {
+                movies = movies.Where(s => s.Genre == movieGenre);
+            }
+
             return View(movies);
         }
 
