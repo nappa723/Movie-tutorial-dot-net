@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTutorial", "MvcTutorial\MvcTutorial.csproj", "{7A8D2F19-405A-482A-82B5-7FEAE381222A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTutorialTests", "MvcTutorial.Tests\MvcTutorialTests.csproj", "{E7935659-BA9F-4810-9513-CF6065F160C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A8D2F19-405A-482A-82B5-7FEAE381222A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8D2F19-405A-482A-82B5-7FEAE381222A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8D2F19-405A-482A-82B5-7FEAE381222A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8D2F19-405A-482A-82B5-7FEAE381222A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7935659-BA9F-4810-9513-CF6065F160C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7935659-BA9F-4810-9513-CF6065F160C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7935659-BA9F-4810-9513-CF6065F160C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7935659-BA9F-4810-9513-CF6065F160C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
